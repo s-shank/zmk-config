@@ -74,9 +74,9 @@
         Nav {
             label = "Nav";
             bindings = <
-                      &trans       &trans  &kp UP_ARROW     &trans  &kp LBRC  &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PLUS
+                    &kp HOME      &kp END  &kp UP_ARROW     &trans  &kp LBRC  &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9         &kp PLUS
               &kp LEFT_SHIFT     &kp LEFT      &kp DOWN  &kp RIGHT  &kp LBKT  &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6        &kp MINUS
-&kp LEFT_ALT          &trans  &kp PAGE_UP        &trans  &kp PG_DN  &kp LPAR  &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &trans
+&kp LEFT_ALT          &trans  &kp PAGE_UP        &trans  &kp PG_DN  &kp LPAR  &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp SLASH
                                                  &trans     &trans    &trans   &kp DEL        &trans  &kp NUMBER_0
             >;
         };
@@ -85,8 +85,8 @@
             label = "Sym";
             bindings = <
         &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
-          &trans  &trans    &trans      &trans       &trans     &trans         &trans           &trans   &trans     &trans
-&trans    &trans  &trans    &trans      &trans       &trans  &kp UNDER      &kp EQUAL           &trans   &trans  &kp SLASH  &kp HOME
+          &trans  &trans    &trans      &trans       &trans   &kp SEMI       &kp APOS         &kp NUBS   &trans     &trans
+&trans    &trans  &trans    &trans      &trans       &trans  &kp MINUS      &kp EQUAL           &trans   &trans     &trans   &trans
                             &trans      &trans       &trans     &trans         &trans           &trans
             >;
         };
@@ -115,8 +115,8 @@
             label = "NavAlt";
             bindings = <
                     &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5     &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0 
-                          &trans       &trans       &trans       &trans       &trans         &kp LEFT   &kp UP_ARROW          &kp DOWN          &kp RIGHT         &trans 
-            &trans        &trans       &trans       &trans       &trans       &trans           &trans         &trans            &trans             &trans         &trans       &trans
+                          &trans       &trans       &trans       &trans    &kp GRAVE         &kp LEFT       &kp DOWN      &kp UP_ARROW          &kp RIGHT         &trans 
+            &trans        &trans       &trans       &trans     &kp SEMI     &kp APOS           &trans         &trans            &trans             &trans         &trans       &trans
                           &trans       &trans       &trans       &trans       &trans           &trans       
             >;
         };
