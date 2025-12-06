@@ -23,8 +23,7 @@
 #define Num         5
 #define Fun         6
 #define Button      7
-#define Game        8
-#define Gameplus    9
+#define NavAlt      8
 
 &mt {
     quick-tap-ms = <100>;
@@ -65,10 +64,10 @@
         Base {
             label = "Base";
             bindings = <
-                   &kp Q       &kp W          &kp E         &kp R      &kp T    &kp Y        &kp U        &kp I       &kp O               &kp P
-              &hm LGUI A  &hm LALT S    &hm LCTRL D  &hm LSHIFT F      &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
-&lt 3 ESCAPE       &kp Z       &kp X          &kp C         &kp V      &kp B    &kp N        &kp M    &kp COMMA     &kp DOT           &kp SLASH  &lt 4 APOSTROPHE
-                                      &mt LCTRL DEL     &lt 1 TAB  &kp SPACE  &kp RET   &lt 2 BSPC    &kp MINUS
+                   &kp Q       &kp W          &kp E         &kp R      &kp T        &kp Y        &kp U            &kp I       &kp O               &kp P
+              &hm LGUI A  &hm LALT S    &hm LCTRL D       &lt 5 F      &kp G        &kp H      &lt 5 J      &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
+&lt 3 ESCAPE       &kp Z       &kp X          &kp C         &kp V      &kp B        &kp N        &kp M        &kp COMMA     &kp DOT           &kp SLASH  &lt 4 APOSTROPHE
+                                         &kp LSHIFT     &lt 1 TAB  &kp SPACE     &kp BSPC    &lt 2 RET  &kp RIGHT_SHIFT
             >;
         };
 
@@ -95,10 +94,10 @@
         Fun {
             label = "Fun";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp F1
-        &trans  &trans  &trans  &trans   &to 5  &trans  &trans  &trans  &trans  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F20  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10            
+        &trans  &trans  &trans  &trans  &kp F11 &kp F12  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans   &trans  &trans
             >;
         };
 
@@ -112,26 +111,14 @@
             >;
         };
 
-        Gaming {
+        NavAlt {
+            label = "NavAlt";
             bindings = <
-            &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-             &kp A   &kp S      &kp D         &kp F   &mo 6  &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &trans  &trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp LCTRL  &kp LEFT_ALT  &trans  &trans  &trans  &trans
+                    &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5     &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0 
+                          &trans       &trans       &trans       &trans       &trans   &kp ARROW_LEFT   &kp ARROW_UP    &kp ARROW_DOWN    &kp ARROW_RIGHT         &trans       &trans      
+            &trans        &trans       &trans       &trans       &trans       &trans           &trans         &trans            &trans             &trans         &trans       &trans
+                          &trans       &trans       &trans       &trans       &trans           &trans       
             >;
-
-            label = "Gaming";
-        };
-
-        Gaming+ {
-            bindings = <
-         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans  &trans  &kp LC(RA(DEL))
-                &kp L         &kp O         &kp Y         &kp K         &kp G  &kp F5  &trans  &trans  &trans           &trans
-&kp TAB         &to 0        &trans        &trans  &kp NUMBER_6  &kp NUMBER_7  &trans  &trans  &trans  &trans           &trans  &kp LA(F4)
-                                            &kp J         &kp I         &kp M  &trans  &trans  &trans
-            >;
-
-            label = "Gaming+";
         };
     };
 };
