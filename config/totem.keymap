@@ -67,7 +67,7 @@
                    &kp Q       &kp W          &kp E         &kp R      &kp T        &kp Y        &kp U            &kp I       &kp O               &kp P
               &hm LGUI A  &hm LALT S    &hm LCTRL D       &lt 5 F      &kp G        &kp H      &lt 5 J      &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
 &lt 3 ESCAPE       &kp Z       &kp X          &kp C         &kp V      &kp B        &kp N        &kp M        &kp COMMA     &kp DOT           &kp SLASH  &lt 4 APOSTROPHE
-                                         &kp LSHIFT     &lt 1 TAB  &kp SPACE     &kp BSPC    &lt 2 RET  &kp RIGHT_SHIFT
+                                         &kp LSHIFT     &lt 1 TAB  &kp SPACE   &lt 2 BSPC      &kp RET  &kp RIGHT_SHIFT
             >;
         };
 
@@ -84,10 +84,10 @@
         Sym {
             label = "Sym";
             bindings = <
-        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
-          &trans  &trans    &trans      &trans       &trans   &kp SEMI       &kp APOS         &kp NUBS   &trans     &trans
-&trans    &trans  &trans    &trans      &trans       &trans  &kp MINUS      &kp EQUAL           &trans   &trans     &trans   &trans
-                            &trans      &trans       &trans     &trans         &trans           &trans
+        &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR    &kp PERCENT       &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
+          &trans  &trans    &trans      &trans  &kp BACKSLASH          &trans            &trans           &trans   &trans     &trans
+&trans    &trans  &trans    &trans   &kp COLON        &kp DQT  &kp UNDERSCORE       &kp PLUS           &trans   &trans     &trans   &trans
+                            &trans      &trans         &trans          &trans         &trans           &trans
             >;
         };
 
@@ -114,10 +114,10 @@
         NavAlt {
             label = "NavAlt";
             bindings = <
-                    &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5     &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0 
-                          &trans       &trans       &trans       &trans    &kp GRAVE         &kp LEFT       &kp DOWN      &kp UP_ARROW          &kp RIGHT         &trans 
-            &trans        &trans       &trans       &trans     &kp SEMI     &kp APOS           &trans         &trans            &trans             &trans         &trans       &trans
-                          &trans       &trans       &trans       &trans       &trans           &trans       
+                    &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3   &kp NUMBER_4 &kp NUMBER_5     &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0 
+                          &trans       &trans       &trans         &trans    &kp GRAVE         &kp LEFT       &kp DOWN      &kp UP_ARROW          &kp RIGHT         &trans 
+            &trans        &trans       &trans       &trans       &kp SEMI     &kp APOS        &kp MINUS      &kp EQUAL            &trans             &trans         &trans       &trans
+                          &trans       &trans       &trans         &trans       &trans           &trans       
             >;
         };
     };
